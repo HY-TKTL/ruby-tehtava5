@@ -7,5 +7,5 @@ def puuttuva (taulu)
   taulu.each do |a|
     summa = summa - a
   end
-  prints summa
+  print summa
 end
