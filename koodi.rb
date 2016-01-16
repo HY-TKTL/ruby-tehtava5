@@ -1,11 +1,7 @@
 def puuttuva (taulu)
   pituus = taulu.size
-  summa = 0
-  for i in 0..pituus
-    summa = summa + i
-  end
-  taulu.each do |a|
-    summa = summa - a
-  end
-  print summa
+  taulu2 = [*0..pituus]
+  summa1 = taulu.inject(0){ |tulos, x| tulos + x }
+  summa2 = taulu2.inject(0){ |tulos, x| tulos + x }
+  vastaus = summa2 - summa1
 end
